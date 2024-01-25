@@ -1,3 +1,13 @@
+# This is a customization of WebShopApps MatrixRate for Magento 2.3+.
+TrioWeb AS has made some changes to the original module to make it work with Klarna Checkout and our own shipping modules.
+
+If you somehow stumbled upon this module, we would ecourage you to use the original module from WebShopApps instead.
+
+## Check out their website ["http://www.Shipperhq.com"]("http://www.Shipperhq.com") for more information.
+
+# Original README.md from WebShopApps follows
+
+
 # ShipperHQ and WebShopApps MatrixRate
 A Shipping Rate module for Magento 2.3+ which supports showing multiple shipping methods. This is based on the Magento Tablerate module and is managed via a csv file.
 
@@ -27,9 +37,9 @@ $ bin/magento setup:upgrade
 Configuration
 -------------------------
 MatrixRate is completely CSV driven, no coding required to change prices, add rates, etc
-It allows multiple postage rates to be displayed for the customer to choose in particular country/city/region/ZIP code/condition range, where condition can be weight, price or #items. The management of shipping rates is done via a CSV file, which is uploaded to the database. Shipping calculations are then done via SQL searches, providing efficient results. 
+It allows multiple postage rates to be displayed for the customer to choose in particular country/city/region/ZIP code/condition range, where condition can be weight, price or #items. The management of shipping rates is done via a CSV file, which is uploaded to the database. Shipping calculations are then done via SQL searches, providing efficient results.
 
-To get started you will need to: 
+To get started you will need to:
 
 1. Create your CSV file of shipping rates. Please follow [the format of the CSV file described in our online docs](https://docs.shipperhq.com/matrixrates-csv-configuration). We also have [many example CSVs](https://docs.shipperhq.com/matrixrates-examples-city-based)  to get you started
 2. Import the CSV file by [following the instructions in our online docs](https://docs.shipperhq.com/1878-2/#How_to_Upload_a_CSV_File)
@@ -41,7 +51,7 @@ Support
 -------
 For further information on using Matrixrates, please refer to our [online documentation](http://docs.shipperhq.com/category/troubleshooting/ecommerce-platform/matrixrates/).
 If you have any issues with this extension, open an issue on [GitHub](https://github.com/webshopapps/module-matrixrate/issues). Alternatively you can contact us via email at support@webshopapps.com
- 
+
 
 WebShopApps MatrixRates is provided AS IS and we are not accepting feature requests at this time. Extended functionality is available via [ShipperHQ](https://www.shipperhq.com).
 
@@ -54,9 +64,9 @@ Magento Issues Impacting MatrixRates
 2. Only country, region and postcode are included in shipping request at checkout - you may not see correct rates returned if filtering on city or PO box addresses
     - Github Issue: https://github.com/magento/magento2/issues/3789
     - Resolved in Magento 2.1 and above for Guest checkout, logged in customers will still only see region/state, postcode and country
-3. Error thrown when placing an order with some shipping methods. Root cause is that some shipping methods have shipping method codes longer than the column length on quote for shipping_method field. Field is truncating the code and order cannot be placed. 
+3. Error thrown when placing an order with some shipping methods. Root cause is that some shipping methods have shipping method codes longer than the column length on quote for shipping_method field. Field is truncating the code and order cannot be placed.
    - Github Issue: https://github.com/magento/magento2/issues/6475
- 
+
 Credits
 ---------
 This extension borrows heavily from the Tablerate capability in Magento2.  In order to keep codebase as bug-free and

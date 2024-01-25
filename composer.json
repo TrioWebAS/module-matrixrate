@@ -1,31 +1,37 @@
 {
-    "name": "webshopapps/module-matrixrate",
-    "description": "Magento Shipping Multiple Table Rates - MatrixRate",
-    "version": "20.4.6",
-    "license": [
-        "OSL-3.0",
-        "AFL-3.0"
-    ],
-    "authors": [
-        {
-            "name": "ShipperHQ",
-            "email": "sales@wshipperhq.com",
-            "homepage": "http://www.Shipperhq.com"
-        },
-        {
-            "name": "Karen Baker"
-        }
-    ],
-    "type": "magento2-module",
-    "support": {
-        "documentation": "http://docs.shipperhq.com"
+  "name": "triowebas/module-matrixrate",
+  "description": "Magento Shipping Multiple Table Rates - MatrixRate",
+  "version": "20.4.6",
+  "license": [
+    "OSL-3.0",
+    "AFL-3.0"
+  ],
+  "authors": [
+    {
+      "name": "Geir K. Thunem",
+      "email": "geir@trioweb.no",
+      "role": "Developer",
+      "homepage": "http://www.trioweb.no"
     },
-    "autoload": {
-        "files": [
-            "src/registration.php"
-        ],
-        "psr-4": {
-            "WebShopApps\\MatrixRate\\": "src/"
-        }
+    {
+      "name": "ShipperHQ",
+      "email": "sales@wshipperhq.com",
+      "homepage": "http://www.Shipperhq.com"
+    },
+    {
+      "name": "Karen Baker"
     }
+  ],
+  "type": "magento2-module",
+  "support": {
+    "documentation": "https://github.com/TrioWebAS/module-matrixrate"
+  },
+  "autoload": {
+    "files": [
+      "src/registration.php"
+    ],
+    "psr-4": {
+      "WebShopApps\\MatrixRate\\": "src/"
+    }
+  }
 }
